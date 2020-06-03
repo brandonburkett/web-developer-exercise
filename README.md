@@ -1,17 +1,17 @@
 # Full Stack Web Developer Starter
-Use this project as to bootstrap the Full Stack Web Developer exercise.
+Use this project to bootstrap the Full Stack Web Developer exercise.  It is a standard Laravel 6 install with hot reloading and bootstrap css.
 
 ## Docker Services
-The `docker-compose.yml` file has all services ready to go (PHP, Redis, MySQL, Ngnix)
+The `docker-compose.yml` file includes all the required services: PHP, Redis, MySQL, Ngnix (except Node)
 * Install Docker or [Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * Run `docker-compose up -d` on the project root folder to get PHP up and running
     * This will build the docker image for PHP
 * Run `docker-compose ps` to make sure the state is `Up` for all services
 
-## Non Docker Services
+## NodeJS
 Node is required to run the front-end portion of the project. A quick way to toggle between node versions is to use NVM.
 
-On Mac using [Brew](https://brew.sh/)
+Install NVM on Mac using [Brew](https://brew.sh/)
 ```
 brew update
 brew upgrade
@@ -20,9 +20,11 @@ nvm install 12.16.1
 nvm alias default 12.16.1
 ```
 
+Note: If you already have Node installed, it should be fine as long as it is version 12.x
+
 ## Dependencies
 ### PHP
-Because PHP is in docker, run the following command to install dependencies.  Make sure PHP is running via `docker-compose ps`.
+Because PHP is running in Docker, use the following commands to install dependencies.  You can verify PHP is running via `docker-compose ps`.
 ```
 docker-compose exec php composer install
 ```
@@ -32,8 +34,10 @@ Then generate an APP_KEY
 docker-compose exec php php artisan key:generate
 ```
 
+Note: If you already have PHP installed, it should be fine as long as it is version 7.3.x
+
 ### JavaScript
-After install NVM and node 12.16.1, running `nvm use` on project root will select the Node version for the project.  Then install dependencies with NPM.
+After install NVM and Node, running `nvm use` on project root will select the Node version for the project.  Then install dependencies with NPM.
 ```
 npm install
 ```
