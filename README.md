@@ -37,13 +37,13 @@ docker-compose exec php php artisan key:generate
 Note: If you already have PHP installed, it should be fine as long as it is version 7.3.x
 
 ### JavaScript
-After install NVM and Node, running `nvm use` on project root will select the Node version for the project.  Then install dependencies with NPM.
+After installing NVM and Node, running `nvm use` on project root will select the Node version for the project.  Then install dependencies with NPM.
 ```
 npm install
 ```
 
 ## Running the Project
-After install both the PHP and JavaScript dependencies and all Docker services are running, start the project.
+After installing both the PHP and JavaScript dependencies and all Docker services are running, start the project.
 ```
 npm run hot
 ```
@@ -52,9 +52,9 @@ This will enable hot module replacement for scss and js.
 ## Artisan Commands
 Artisan commands can be run from the Docker container with `docker-compose exec CONTAINER COMMAND`.
  * EX: creating a model: `docker-compose exec php php artisan make:model Models/Comment --migration`
- * running migrations: `docker-compose exec php php artisan migrate`
+ * Running migrations: `docker-compose exec php php artisan migrate`
 
-## File Locations
+## Quick File Locations
 * Add any JavaScript to `resources/js`
 * Add any SCSS to `resources/sass`
 * Add any HTML (blade templates) to `resources/views`
