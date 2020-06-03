@@ -28,8 +28,8 @@ docker-compose exec php composer install
 ```
 
 Then generate an APP_KEY
-```$xslt
-php artisan key:generate
+```
+docker-compose exec php php artisan key:generate
 ```
 
 ### JavaScript
@@ -48,7 +48,7 @@ This will enable hot module replacement for scss and js.
 ## Artisan Commands
 Artisan commands can be run from the Docker container with `docker-compose exec CONTAINER COMMAND`.
  * EX: creating a model: `docker-compose exec php php artisan make:model Models/Comment --migration`
- * running migrations: 
+ * running migrations: `docker-compose exec php php artisan migrate`
 
 ## File Locations
 * Add any JavaScript to `resources/js`
