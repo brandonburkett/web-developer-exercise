@@ -42,6 +42,8 @@ After installing NVM and Node, running `nvm use` on project root will select the
 npm install
 ```
 
+Note: If you get errors related to node-gyp, please make sure you have xcode command line tools installed.  EX: `xcode-select --install`
+
 ## Running the Project
 After installing both the PHP and JavaScript dependencies and all Docker services are running, start the project.
 ```
