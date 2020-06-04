@@ -22,7 +22,7 @@ nvm alias default 12.16.1
 
 **Note**: If you already have Node installed, it *should* be fine as long as it is version 12.x
 
-## Dependencies
+## Installing Dependencies
 ### PHP
 Because PHP is running in Docker, use the following commands to install dependencies.  You can verify PHP is running via `docker-compose ps`.
 ```
