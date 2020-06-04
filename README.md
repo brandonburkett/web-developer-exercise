@@ -49,7 +49,16 @@ After installing both the PHP and JavaScript dependencies and all Docker service
 ```
 npm run hot
 ```
-This will enable hot module replacement for scss and js.
+This will enable hot module replacement for scss and js, but will not automatically open up your browser.
+
+Open up your browser and go to 
+```
+http://localhost
+```
+
+and you should see
+
+![Homepage Image](/public/img/comment-system.png?raw=true)
 
 ## Artisan Commands
 Artisan commands can be run from the Docker container with `docker-compose exec CONTAINER COMMAND`.
