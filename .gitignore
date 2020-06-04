@@ -17,5 +17,11 @@ yarn-error.log
 _ide_helper.php
 _ide_helper_models.php
 
+# Laravel Debugbar files
+/storage/debugbar/
+
+# webpack stats
+stats.json
+
 # misc
 .DS_Store
