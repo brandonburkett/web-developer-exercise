@@ -29,11 +29,6 @@ Because PHP is running in Docker, use the following commands to install dependen
 docker-compose exec php composer install
 ```
 
-Then generate an APP_KEY
-```
-docker-compose exec php php artisan key:generate
-```
-
 **Note**: If you already have PHP installed, it *should* be fine as long as it is version 7.3.x
 
 ### JavaScript
@@ -47,12 +42,23 @@ npm install
 
 ## Running the Project
 After installing both the PHP and JavaScript dependencies and all Docker services are running, start the project.
+
+#### 1. Make a copy of the environment file example. From the project root run
+```
+cp .env.example .env
+```
+
+#### 2. Then generate an APP_KEY
+```
+docker-compose exec php php artisan key:generate
+```
+
+#### 3. Run the project! This will enable hot module replacement for scss and js, but will not automatically open up your browser.
 ```
 npm run hot
 ```
-This will enable hot module replacement for scss and js, but will not automatically open up your browser.
 
-Open up your browser and go to 
+#### 4. Open up your browser and go to 
 ```
 http://localhost
 ```
