@@ -53,7 +53,8 @@ cp .env.example .env
 docker-compose exec php php artisan key:generate
 ```
 
-#### 3. Run the project! This will enable hot module replacement for scss and js, but will not automatically open up your browser.
+#### 3. Run the project!
+This will enable hot module replacement for scss and js, but will not automatically open up your browser.
 ```
 npm run hot
 ```
