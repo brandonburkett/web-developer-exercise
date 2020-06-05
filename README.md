@@ -1,5 +1,9 @@
 # Full Stack Web Developer Starter
-Use this project to bootstrap the Full Stack Web Developer exercise.  It is a standard Laravel 6 install with hot reloading and bootstrap css.
+Use this project to bootstrap the Full Stack Web Developer exercise.  It includes:
+* Laravel 6
+* Vue
+* Laravel Mix / hot reloading
+* bootstrap css
 
 ## Docker Services
 The `docker-compose.yml` file includes all the required services: PHP, Redis, MySQL, Ngnix (except Node)
