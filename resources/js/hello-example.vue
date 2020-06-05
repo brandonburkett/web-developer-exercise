@@ -1,5 +1,5 @@
 <template>
-  <div class="callout">
+  <div class="alert alert-success">
     {{ message }}
   </div>
 </template>
