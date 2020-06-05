@@ -24,6 +24,11 @@
         <h1>Comment System</h1>
         <p class="lead">Feel free to edit anything within the project.</p>
       </div>
+
+      {{-- @see /resources/js/app.js if you want to use Vue --}}
+      <div class="vue">
+        <hello-example></hello-example>
+      </div>
     </main>
 
     {{-- laravel mix --}}

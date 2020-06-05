@@ -10,7 +10,12 @@ insert_final_newline = true
 max_line_length = 80
 
 # Indentation override for all JS under lib directory
-[src/**.js]
+[resources/**.js]
+indent_style = space
+indent_size = 2
+
+# Indentation override for all JS under lib directory
+[resources/**.vue]
 indent_style = space
 indent_size = 2
 
