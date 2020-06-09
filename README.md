@@ -80,6 +80,7 @@ Artisan commands can be run from the Docker container with `docker-compose exec 
 ## MySQL Commands
 Like Artisan commands, mysql commands can be run from the Docker container `docker-compose exec CONTAINER COMMAND`.
  * EX: Connecting to MySQL (exercise db): `docker-compose exec mysql mysql -u root -p exercise`
+   * Password is `exercise` when prompted (see docker-compse.yml file)
  * EX: Getting inside the MySQL container: `docker-compose exec mysql bash` then can run any MySQL commands from inside the container
 
 ## Quick File Locations
