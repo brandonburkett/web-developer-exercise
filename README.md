@@ -74,8 +74,13 @@ and you should see
 
 ## Artisan Commands
 Artisan commands can be run from the Docker container with `docker-compose exec CONTAINER COMMAND`.
- * EX: creating a model: `docker-compose exec php php artisan make:model Models/Comment --migration`
- * Running migrations: `docker-compose exec php php artisan migrate`
+ * EX: Creating a model: `docker-compose exec php php artisan make:model Models/Comment --migration`
+ * EX: Running migrations: `docker-compose exec php php artisan migrate`
+ 
+## MySQL Commands
+Like Artisan commands, mysql commands can be run from the Docker container `docker-compose exec CONTAINER COMMAND`.
+ * EX: Connecting to MySQL (exercise db): `docker-compose exec mysql mysql -u root -p exercise`
+ * EX: Getting inside the MySQL container: `docker-compose exec mysql bash` then can run any MySQL commands from inside the container
 
 ## Quick File Locations
 * Add any JavaScript to `resources/js`
